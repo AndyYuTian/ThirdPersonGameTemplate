@@ -1137,7 +1137,7 @@
     "debug": true,
     "moveTurnSpeed": 360,
     "moveSpeed": 3,
-    "gravity": 12,
+    "gravity": 9.18,
     "jumpPreparationDuration": 0.1,
     "_id": "09t4A847ZHpITM/i9bgS1p"
   },
@@ -1458,7 +1458,7 @@
     "_priority": 1073741824,
     "_fov": 45,
     "_fovAxis": 0,
-    "_orthoHeight": 415.3911205073996,
+    "_orthoHeight": 360,
     "_near": 1,
     "_far": 2000,
     "_color": {

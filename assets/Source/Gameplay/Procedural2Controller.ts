@@ -245,7 +245,7 @@ export class Procedural2Controller extends Component {
 
     private _doJump() {
         this._falling = true;
-        this._velocityY = 6.5;
+        this._velocityY = 5;
     }
 }
 

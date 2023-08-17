@@ -37,7 +37,7 @@
       },
       "physics": {
         "_value": true,
-        "_option": "physics-ammo"
+        "_option": "physics-physx"
       },
       "physics-ammo": {
         "_value": false
@@ -139,7 +139,7 @@
       "light-probe",
       "marionette",
       "particle",
-      "physics-ammo",
+      "physics-physx",
       "primitive",
       "procedural-animation",
       "profiler",
