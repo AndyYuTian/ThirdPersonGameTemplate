@@ -117,8 +117,8 @@
       "name": "",
       "id": "16892313004140.6991849328835296",
       "clone": null,
-      "centerX": -228,
-      "centerY": -6
+      "centerX": -97,
+      "centerY": -2
     },
     "name": "Entry"
   },
@@ -139,8 +139,8 @@
       "name": "",
       "id": "16892313004140.08400145732413611",
       "clone": null,
-      "centerX": 125,
-      "centerY": 0
+      "centerX": 340,
+      "centerY": -173
     },
     "name": "Any"
   },
@@ -150,8 +150,8 @@
       "name": "",
       "id": "16892313412320.9732316768989839",
       "clone": null,
-      "centerX": -55.5,
-      "centerY": -2.5
+      "centerX": 118.5,
+      "centerY": -1.5
     },
     "name": "Pose",
     "graph": {
@@ -168,9 +168,9 @@
     "__type__": "cc.animation.PoseGraph",
     "__editorExtras__": {
       "viewport": {
-        "scale": 0.7349999999999998,
-        "top": -55.04453264670805,
-        "left": -452.7276760076901
+        "scale": 0.6599999999999997,
+        "top": -53.39079435997699,
+        "left": -415.67625342905615
       }
     },
     "_outputNode": {
@@ -1437,8 +1437,8 @@
       "name": "",
       "id": "16892313605320.8610668379791555",
       "clone": null,
-      "centerX": 125,
-      "centerY": 0
+      "centerX": 286,
+      "centerY": -204
     },
     "name": "Any"
   },
@@ -1510,8 +1510,8 @@
       "name": "",
       "id": "16895887479360.2726922104240763",
       "clone": null,
-      "centerX": -125,
-      "centerY": 0
+      "centerX": -227.5210084033614,
+      "centerY": -5.0420168067227
     },
     "name": "Entry"
   },
@@ -1521,8 +1521,8 @@
       "name": "",
       "id": "16895887479360.12495166152410286",
       "clone": null,
-      "centerX": 293,
-      "centerY": 51
+      "centerX": 304.7647058823529,
+      "centerY": -5.302521008403403
     },
     "name": "Exit"
   },
@@ -1532,8 +1532,8 @@
       "name": "",
       "id": "16895887479360.13945048744942978",
       "clone": null,
-      "centerX": 0,
-      "centerY": 75
+      "centerX": 262.1848739495799,
+      "centerY": -269.5378151260506
     },
     "name": "Any"
   },
@@ -1543,8 +1543,8 @@
       "name": "",
       "id": "16895887990520.2396183690033049",
       "clone": null,
-      "centerX": 198.39992230286475,
-      "centerY": -74.6873884229559
+      "centerX": 140.41672902555388,
+      "centerY": -5.77982539774581
     },
     "name": "Falling To Landing",
     "_components": [],
@@ -1587,8 +1587,8 @@
       "name": "Falling",
       "id": "16921816531420.4957362741228777",
       "clone": null,
-      "centerX": 10.904948535527183,
-      "centerY": -129.36689276749672
+      "centerX": -47.91858087623757,
+      "centerY": -5.837481002790753
     },
     "name": "Falling",
     "graph": {
