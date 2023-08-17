@@ -100,7 +100,6 @@ export class FollowCameraInput extends Component {
     }> = [];
 
     private _onTouchBegin (eventTouch: EventTouch) {
-        console.log(`Touches Begin: ${eventTouch.getTouches().length}`);
         const touches = eventTouch.getTouches();
         for (const touch of touches) {
             if (this._touches.length < 2) {

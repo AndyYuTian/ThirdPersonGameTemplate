@@ -387,7 +387,7 @@
     "node": {
       "__id__": 8
     },
-    "_enabled": true,
+    "_enabled": false,
     "__prefab": null,
     "_sampleScale": 1,
     "_feedback": 0.95,
@@ -7872,17 +7872,17 @@
       "x": 0.2,
       "y": 0.5,
       "z": 0.8,
-      "w": 0.2604165625
+      "w": 0.312499875
     },
     "_skyColor": {
       "__type__": "cc.Vec4",
       "x": 0.2,
       "y": 0.5,
       "z": 0.8,
-      "w": 0.2604165625
+      "w": 0.312499875
     },
-    "_skyIllumHDR": 10000,
-    "_skyIllum": 10000,
+    "_skyIllumHDR": 12000,
+    "_skyIllum": 12000,
     "_groundAlbedoHDR": {
       "__type__": "cc.Vec4",
       "x": 0.2,
