@@ -140,26 +140,23 @@ export class Procedural2_Animation extends Component {
     }
 
     private _updateAirState(deltaTime: number) {
+        const GRAVITY_PULL_TIME_THRESHOLD = 0.1;
+
         const velocityY = this._controller.velocity.y;
-        // DO NOT directly use `this._controller.falling` for
-        // deciding if the character is in air.
-        // Because the `falling` might be suddenly changed due to:
-        // - going down a relatively low step.
-        // - precision brought by physics system.
-        // So we here we handle this case:
-        // - If the character has a positive velocity, he's in air.
-        // - Otherwise, if the character has been pulled down by gravity by `GRAVITY_PULL_TIME_THRESHOLD` seconds, he's in air.
-        // - Otherwise, only if the `falling` is true for contiguous `FALLING_TIME_THRESHOLD` seconds, he's in air.
-        const GRAVITY_PULL_TIME_THRESHOLD = 0.3;
-        const FALLING_TIME_THRESHOLD = 0.5;
-        if (!this._controller.falling) {
-            this._inAirTimer = 0.0;
+        let inAir = false;
+        if (!this._isInAir) {
+            // If we're on ground and controller says we're falling,
+            // - if we have positive y velocity, that's the case we're jumping up, we're in air.
+            // - if we have negative y velocity, that's the case we're falling,
+            //   but to avoid suddenly change of falling state(for example sliding down) of controller,
+            //   we give a cache time to judgement.
+            inAir = this._controller.falling && (velocityY > 0 || velocityY < - this._controller.gravity * GRAVITY_PULL_TIME_THRESHOLD);
         } else {
-            this._inAirTimer += deltaTime;
+            inAir = this._controller.falling;
         }
-        const inAir = velocityY > 0 || (velocityY < - this._controller.gravity * GRAVITY_PULL_TIME_THRESHOLD) || this._inAirTimer > FALLING_TIME_THRESHOLD;
-        this._animationController.setValue('InAir', inAir);
+        
         this._isInAir = inAir;
+        this._animationController.setValue('InAir', this._isInAir);
     }
 
     private _updateFootIK(deltaTime: number) {
